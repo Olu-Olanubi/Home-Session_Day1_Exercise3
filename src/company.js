@@ -19,7 +19,7 @@ function Company(name, location, business, employees){
 			}
 
 		 var finance = ['Banking', 'Insurance', 'Stockbroking', 'Commodities', 'Forex']; 
-		 var tech =  ['Software','Web Services', 'Internet', 'eCommerce', 'Electronics', 'Computers', 'Mobile'];
+		 var tech =  ['Software','Web Services', 'Internet', 'eCommerce', 'Electronics', 'Computers', 'Networking', 'Mobile'];
 			for( var i = 0; i < finance.length; i++){
 				if(business === finance[i]){
 					this.industry = 'Finance';
@@ -34,7 +34,7 @@ function Company(name, location, business, employees){
 					}
 				}			
 	
-				
+//statement to output company profile
 this.profile = "We are " + this.name + ", headquartered in " + this.location + ". We are into " + this.business 
 		+ " and our staff strength is " + this.staff + ". We are a " + this.size;
 

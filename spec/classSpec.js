@@ -26,6 +26,7 @@ var Company = require('../src/company.js');
       expect(company.name).toBe('Cisco');
       expect(company.location).toBe('San-Francisco');
       expect(company.business).toBe('Networking');
+      expect(company.industry).toBe('Technology');
   	});
   });
     describe("Company Class: Create a company, and assign its profile", function() {
@@ -72,5 +73,11 @@ var Company = require('../src/company.js');
     		var company = new Company('Andela', 'Lagos', 'Software', 120);
     		expect(company.profile).toBe('We are Andela, headquartered in Lagos. We are into Software and our staff strength is 120. We are a Big Company');
     	});
+
+      it("The company name and location and other parameters should be a property of the company", function() {
+
+        var company = new Company('JP Morgan', 'New York', 'Banking', 15000);
+        expect(company.profile).toBe('We are JP Morgan, headquartered in New York. We are into Banking and our staff strength is 15000. We are a Multinational');
+      });
     });
 })();
