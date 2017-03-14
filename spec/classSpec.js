@@ -17,6 +17,11 @@ var Company = require('../src/company.js');
       expect(company.name).toBe('Andela');
       expect(company.location).toBe('Lagos');
   	});
+    it("The company name and location should be a property of the company", function() {
+      var company  = new Company('Apple', 'California');
+      expect(company.name).toBe('Apple');
+      expect(company.location).toBe('California');
+    });
   });
 
     describe("Company Class: Create a company, and assign its profile", function() {
